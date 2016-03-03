@@ -8,9 +8,7 @@ CAS without the login screen and cross-domain authentication with AJAX.
 * CAS Server 4.1+
 * JSONP (cross-domain login)
 
-## How to use?
-
-#### Configuration
+## Configuration
 
 * Edit the cas-server-webapp `pom.xml`, add the following to the pom.xml:
 ```xml
@@ -36,9 +34,9 @@ Start the cas-server-webapp, You can try to access http://cas.server.host/a/logi
 ![Alt text](http://ww2.sinaimg.cn/large/6a70578fjw1f1k3wahw9rj20rq0490uh.jpg)
 
 
-#### Get login ticket on the login page
+## Login page example
 
-Login from example:
+Get login ticket on the login page, Login from example:
 ```html
 <from method="post" action="/a/logins">
 <input name="username" type="input" id="username"/>
