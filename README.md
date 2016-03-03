@@ -10,10 +10,9 @@ CAS without the login screen and cross-domain authentication with AJAX.
 
 ## How to use ?
 
-#### Get login ticket on the login page
+#### Configuration
 
-###### 1. Add dependency to cas-server-webapp `pom.xml`
-
+* Edit the cas-server-webapp `pom.xml`, add the following to the pom.xml:
 ```xml
 <dependency>
     <groupId>io.jstack</groupId>
@@ -22,7 +21,7 @@ CAS without the login screen and cross-domain authentication with AJAX.
 <dependency>
 ```
 
-###### 2. Edit the cas-server-webapp `web.xml`: add `classpath:spring/ajax-content.xml` to `contextConfigLocation` param value.
+* Edit the cas-server-webapp `web.xml`, add `classpath:spring/ajax-content.xml` to `contextConfigLocation` param value.
 e.g:
 
 ```xml
@@ -36,3 +35,5 @@ e.g:
 Start the cas-server-webapp, You can try to access http://cas.server.host/a/logins/ticket and get the login ticket , like this: 
 
 ![Alt text](http://ww2.sinaimg.cn/large/6a70578fjw1f1k3wahw9rj20rq0490uh.jpg)
+
+#### Get login ticket on the login page
