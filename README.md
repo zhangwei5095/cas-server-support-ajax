@@ -1,4 +1,4 @@
-# CAS Server support Ajax
+# CAS Server support AJAX
 
 CAS without the login screen and cross-domain authentication with AJAX.
 
@@ -8,7 +8,7 @@ CAS without the login screen and cross-domain authentication with AJAX.
 * CAS Server 4.1+
 * JSONP (cross-domain login)
 
-## How to use ?
+## How to use?
 
 #### Configuration
 
@@ -23,7 +23,6 @@ CAS without the login screen and cross-domain authentication with AJAX.
 
 * Edit the cas-server-webapp `web.xml`, add `classpath:spring/ajax-content.xml` to `contextConfigLocation` param value.
 e.g:
-
 ```xml
 <init-param>
     <param-name>contextConfigLocation</param-name>
@@ -36,4 +35,17 @@ Start the cas-server-webapp, You can try to access http://cas.server.host/a/logi
 
 ![Alt text](http://ww2.sinaimg.cn/large/6a70578fjw1f1k3wahw9rj20rq0490uh.jpg)
 
+
 #### Get login ticket on the login page
+
+Using JQuery example:
+
+```js
+var ticketApi = 'http://local.casserver:8080/a/logins/ticket?callback=?';
+$.getJSON( ticketApi, {
+    service: 'https://www.baidu.com'
+}).done(function(data) {
+    $("#lt_input").val(data.lt);
+    $("#execution_input").val(data.execution);
+})
+```
