@@ -38,7 +38,22 @@ Start the cas-server-webapp, You can try to access http://cas.server.host/a/logi
 
 #### Get login ticket on the login page
 
-Using JQuery example:
+Login from example:
+```html
+<from method="post" action="/a/logins">
+<input name="username" type="input" id="username"/>
+<input name="passport" type="passport" id="passport"/>
+
+<input type="hidden" id="lt" name="lt" />
+<input type="hidden" id="execution" name="execution" />
+<input type="hidden" name="_eventId" value="submit"/>
+
+<input type="submit" value="login" name="submit">
+</form>
+```
+
+
+Initialize Login Ticket Using JQuery:
 
 ```js
 var ticketApi = 'http://local.casserver:8080/a/logins/ticket?callback=?';
