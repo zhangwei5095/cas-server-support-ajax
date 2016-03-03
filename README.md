@@ -1,6 +1,6 @@
 # CAS Server support Ajax
 
-CAS without the login screen and authentication with AJAX.
+CAS without the login screen and cross-domain authentication with AJAX.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ CAS without the login screen and authentication with AJAX.
 <dependency>
 ```
 
-##### 2. Edit the cas-server-webapp `web.xml`: add `classpath:spring/ajax-content.xml` to `contextConfigLocation` param value.
+###### 2. Edit the cas-server-webapp `web.xml`: add `classpath:spring/ajax-content.xml` to `contextConfigLocation` param value.
 e.g:
 
 ```xml
