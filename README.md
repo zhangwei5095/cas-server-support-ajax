@@ -7,6 +7,7 @@ CAS without the login screen and authentication with AJAX.
 * JDK 1.7+
 * CAS Server 4.1+
 * JSONP (cross-domain login)
+
 ## How to use ?
 
 #### Get login ticket on the login page
