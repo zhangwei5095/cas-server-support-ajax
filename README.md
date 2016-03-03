@@ -33,6 +33,6 @@ e.g:
 </init-param>
 ```
 
-Start the cas-server-webapp, you can get the login ticket access http://cas.server.host/a/logins/ticket, like this: 
+Start the cas-server-webapp, You can try to access http://cas.server.host/a/logins/ticket and get the login ticket , like this: 
 
-![Alt text](http://ww4.sinaimg.cn/large/6a70578fjw1f1k3higjg1j20vg04pwge.jpg)
+![Alt text](http://ww2.sinaimg.cn/large/6a70578fjw1f1k3wahw9rj20rq0490uh.jpg)
